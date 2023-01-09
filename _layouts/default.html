@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+  <style>
+    #results-container{
+        margin-left:0;
+    }
+  </style>
+
+  <body>
+
+    {%- include header.html -%}
+
+    
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <!-- HTML elements for search -->
+<input type="text" class="input" id="search-input" placeholder="Search blog posts..">
+<ul id="results-container"></ul>
+
+<!-- or without installing anything -->
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+  <script>
+    var sjs = SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+  searchResultTemplate: '<li style="list-style: none; margin: 0; padding:8px 4px; background:#fff; box-shadow: 3px 3px 5px rgba(0,0,0,0.25);"><a style="" href="{{ site.url }}{url}"> <span style="padding:4px 12px;"> {date}</span> / {title} </a></li>'
+})
+</script>
+
+</html>
