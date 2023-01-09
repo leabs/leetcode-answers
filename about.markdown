@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+comments: false
 ---
 
 I'm doing the daily javascript challenges on [LeetCode](https://leetcode.com/) for the whole year. I'm using this site to document my progress and to share my solutions. This is a great way to learn and practice javascript.

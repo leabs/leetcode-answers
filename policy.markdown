@@ -2,6 +2,7 @@
 layout: page
 title: Comment Policy
 permalink: /comment-policy/
+comments: false
 ---
 
 We try our best to make sure that the discussions on our articles are the troll, spam and abuse free but we’re not omnipresent. The comment section can be a great place for interaction with readers, writers and even for spawning stimulating conversation – it can be a great place for all of us! To ensure that you have a good time over here at MSPU, please make sure to stick to the following guidelines:
