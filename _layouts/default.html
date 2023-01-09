@@ -6,6 +6,12 @@
     #results-container{
         margin-left:0;
     }
+    #thread__wrapper{
+      max-width: -webkit-calc(800px - (30px));
+    max-width: calc(800px - (30px));
+    padding-right: 15px;
+    padding-left: 15px;
+    }
   </style>
 
   <body>
@@ -23,11 +29,14 @@
 <!-- or without installing anything -->
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
         {{ content }}
-      </div>
-    </main>
-    {%- if page.comments == true -%}
-      {%- include disqus_comments.html -%}
+        <br >
+        {%- if page.url contains '/2023/'-%}
+    {%- include disqus_comments.html -%}
     {%- endif -%}
+      </div>
+      
+    </main>
+  
 
     {%- include footer.html -%}
     <script id="dsq-count-scr" src="//leet-code-answers.disqus.com/count.js" async></script>
