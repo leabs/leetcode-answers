@@ -1,0 +1,49 @@
+---
+layout: post
+title: "290. Word Pattern"
+date: 2023-01-01 10:35:33 -0500
+---
+
+Given a `pattern` and a string `s`, find if `s` follows the same pattern.
+
+Here **follow** means a full match, such that there is a bijection between a letter in `pattern` and a non-empty word in `s`.
+
+```javascript
+/**
+ * @param {string} pattern
+ * @param {string} s
+ * @return {boolean}
+ */
+var wordPattern = function (pattern, s) {
+  //Split s into an array of words
+  const sWord = s.split(" ");
+  //If the length of the pattern does not equal the length of the sWord array, return false
+  if (sWord.length !== pattern.length) {
+    return false;
+  }
+  //Create a new map and set
+  const patternMap = new Map();
+  //Create a new set
+  const uniqueSet = new Set();
+  //For loop to iterate through the pattern
+  for (let i = 0; i < pattern.length; i++) {
+    //If the patternMap does not have the pattern
+    if (!patternMap.has(pattern[i])) {
+      //If the uniqueSet has the sWord
+      if (uniqueSet.has(sWord[i])) {
+        return false;
+      }
+      //Set the patternMap to the pattern and sWord
+      patternMap.set(pattern[i], sWord[i]);
+      //Add the sWord to the uniqueSet
+      uniqueSet.add(sWord[i]);
+    } else {
+      //If the patternMap does not equal the sWord, return false
+      if (sWord[i] !== patternMap.get(pattern[i])) {
+        return false;
+      }
+    }
+  }
+  return true;
+};
+```
