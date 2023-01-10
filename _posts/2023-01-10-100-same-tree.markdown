@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "100. Same Tree"
-date: 2023-01-010 10:35:33 -0500
+date: 2023-01-10 10:35:33 -0500
 comments: true
 ---
 
