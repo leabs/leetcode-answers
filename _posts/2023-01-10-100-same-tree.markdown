@@ -1,0 +1,42 @@
+---
+layout: post
+title: "100. Same Tree"
+date: 2023-01-010 10:35:33 -0500
+comments: true
+---
+
+Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+
+Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} p
+ * @param {TreeNode} q
+ * @return {boolean}
+ */
+var isSameTree = function (p, q) {
+  //Return true if p and q are both null
+  if (p === null && q === null) {
+    return true;
+  }
+  //Return false if p and q are not both null
+  if (p === null || q === null) {
+    return false;
+  }
+  //Return false if p.val and q.val are not equal
+  if (p.val !== q.val) {
+    return false;
+  }
+  //Return the result of isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
+  return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+};
+```
