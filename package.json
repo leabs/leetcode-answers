@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "simple-jekyll-search": "^1.10.0"
+    "@tinacms/cli": "^1.0.5",
+    "simple-jekyll-search": "^1.10.0",
+    "tinacms": "^1.1.2"
   }
 }

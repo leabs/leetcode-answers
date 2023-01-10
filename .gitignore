@@ -6,3 +6,5 @@ _site/
 .bundle/
 vendor/
 node_modules/
+node_modules
+.tina/config.js
