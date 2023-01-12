@@ -23,8 +23,8 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <!-- HTML elements for search -->
-<input type="text" class="input" id="search-input" placeholder="Search blog posts..">
-<ul id="results-container"></ul>
+<input type="text" class="input" id="search-input" style="width:100%; padding:4px;margin: 8px;margin-bottom:0;" placeholder="Search blog posts..">
+<ul id="results-container" style="width:100%; padding:4px;margin: 8px; margin-top:0;"></ul>
 
 <!-- or without installing anything -->
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
@@ -47,7 +47,7 @@
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '/search.json',
-  searchResultTemplate: '<li style="list-style: none; margin: 0; padding:8px 4px; background:#fff; box-shadow: 3px 3px 5px rgba(0,0,0,0.25);"><a style="" href="{{ site.url }}{url}"> <span style="">{date}</span> - <sapn>{title}</span> </a></li>'
+  searchResultTemplate: '<li style="list-style: none; margin: 0; padding:8px 4px; background:#fff; box-shadow: 3px 3px 5px rgba(0,0,0,0.25);"><a style="" href="{{ site.url }}{url}"> <span>{title}</span> <br /> <span style="">{date}</span>  | <span>Day: {day}</span></a></li>'
 })
 </script>
 

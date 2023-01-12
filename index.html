@@ -4,11 +4,23 @@ layout: default
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-<h1 style="font-size: 1.5rem"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-<p class="author">
-  <span class="date">{{ post.date | date: "%d %b %Y" }}</span>
-</p>
-<div class="content">{{ post.content | strip_html | truncatewords: 25 }}</div>
+<div
+  style="
+    padding: 6px 12px;
+    border-radius: 20px;
+    box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.15);
+  "
+>
+  <h1 style="font-size: 1.25rem; margin-bottom: 0">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </h1>
+  <p class="post-meta">
+    <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+    <br />
+    <span>Day: {{ post.date | date: "%j" }}</span>
+  </p>
+  <div class="content">{{ post.content | strip_html | truncatewords: 25 }}</div>
+</div>
 <br />
 {% endfor %} {% if paginator.total_pages > 1 %}
 <div class="pagination">
