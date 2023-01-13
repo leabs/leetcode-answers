@@ -10,7 +10,7 @@ subtitle: Daily javascript challenges for 2023.
   class="input"
   id="search-input"
   style="
-    width: 94%;
+    width: 100%;
     padding: 4px;
     display: block;
     margin: 8px;
@@ -22,6 +22,7 @@ subtitle: Daily javascript challenges for 2023.
 <ul
   id="results-container"
   style="
+    margin-left: 0 !important;
     width: 100%;
     padding: 4px;
     margin: 8px;
@@ -55,7 +56,7 @@ subtitle: Daily javascript challenges for 2023.
     {% endif %}
   </div>
 
-  <div class="content">{{ post.content | strip_html | truncatewords: 25 }}</div>
+  <div class="content">{{ post.content | strip_html | truncatewords: 20 }}</div>
 </div>
 <br />
 {% endfor %} {% if paginator.total_pages > 1 %}
