@@ -3,6 +3,7 @@ layout: post
 title: "100. Same Tree"
 date: 2023-01-10 07:35:33 -0500
 comments: true
+difficulty: easy
 ---
 
 Given the roots of two binary trees p and q, write a function to check if they are the same or not.

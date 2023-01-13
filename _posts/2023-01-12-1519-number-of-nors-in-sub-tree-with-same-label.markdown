@@ -3,6 +3,7 @@ layout: post
 title: "1519. Number of Nodes in the Sub-Tree With the Same Label"
 date: 2023-01-12 07:35:33 -0500
 comments: true
+difficulty: medium
 ---
 
 You are given a tree (i.e. a connected, undirected graph that has no cycles) consisting of n nodes numbered from 0 to n - 1 and exactly n - 1 edges. The root of the tree is the node 0, and each node of the tree has a label which is a lower-case character given in the string labels (i.e. The node with the number i has the label labels[i]).

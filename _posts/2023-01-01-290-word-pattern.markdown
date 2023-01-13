@@ -2,6 +2,7 @@
 layout: post
 title: "290. Word Pattern"
 date: 2023-01-01 10:35:33 -0500
+difficulty: easy
 ---
 
 Given a `pattern` and a string `s`, find if `s` follows the same pattern.

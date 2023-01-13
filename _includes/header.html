@@ -1,0 +1,123 @@
+<nav
+  class="navbar"
+  role="navigation"
+  aria-label="main navigation"
+  style="max-width: 1100px; margin: 0 auto"
+>
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{site.url}}"> {{site.title}} </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/about"> About </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a
+            class="button is-outlined"
+            target="_blank"
+            href="https://github.com/leabs/LeetCode-answers"
+          >
+            <strong>GitHub</strong
+            ><img
+              src="{{site.url}}/assets/images/external.png"
+              style="width: 18px; margin-left: 5px; margin-bottom: 2px"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<header class="site-header" style="border-top: 0">
+  <section
+    class="hero is-medium is-info is-bold"
+    style="
+      background-image: radial-gradient(
+        circle farthest-corner at 12.3% 19.3%,
+        #5558da 0%,
+        #5fd1f9 100.2%
+      ) !important;
+    "
+  >
+    <div class="wrapper">
+      <div class="hero-body" style="text-align: center">
+        <div class="">
+          <h1 class="title">{{page.title}}</h1>
+          <h2 class="subtitle">{{page.subtitle}}</h2>
+          <p class="post-meta" style="color: #fff">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d,
+            %Y" -%}
+            <time
+              class="dt-published"
+              datetime="{{ page.date | date_to_xmlschema }}"
+              itemprop="datePublished"
+            >
+              {{ page.date | date: date_format }}
+            </time>
+            {%- if page.modified_date -%} ~ {%- assign mdate =
+            page.modified_date | date_to_xmlschema -%}
+            <time
+              class="dt-modified"
+              datetime="{{ mdate }}"
+              itemprop="dateModified"
+            >
+              {{ mdate | date: date_format }}
+            </time>
+            {%- endif -%} {%- if page.author -%} • {% for author in page.author
+            %}
+            <span
+              itemprop="author"
+              itemscope
+              itemtype="http://schema.org/Person"
+            >
+              <span class="p-author h-card" itemprop="name"
+                >{{ author }}</span
+              ></span
+            >
+            {%- if forloop.last == false %}, {% endif -%} {% endfor %} {%- endif
+            -%}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
+    );
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach((el) => {
+      el.addEventListener("click", () => {
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
+      });
+    });
+  });
+</script>

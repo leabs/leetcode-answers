@@ -2,6 +2,7 @@
 layout: post
 title: "520. Detect Capital"
 date: 2023-01-02 10:35:33 -0500
+difficulty: easy
 ---
 
 We define the usage of capitals in a word to be right when one of the following cases holds:

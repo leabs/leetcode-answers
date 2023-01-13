@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   {%- include head.html -%}
   <style>
     #results-container{
@@ -25,14 +25,7 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!-- HTML elements for search -->
-<input type="text" class="input" id="search-input" style="width: 94%;
-  padding: 4px;
-  display: block;
-  margin: 8px;
-  margin: 0 auto;
-  padding: 4px;" placeholder="Search blog posts..">
-<ul id="results-container" style="width:100%; padding:4px;margin: 8px; margin-top:0; margin-bottom:12px;"></ul>
+      
 
 <!-- or without installing anything -->
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>

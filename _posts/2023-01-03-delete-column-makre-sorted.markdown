@@ -2,6 +2,7 @@
 layout: post
 title: "944. Delete Columns to Make Sorted"
 date: 2023-01-03 10:35:33 -0500
+difficulty: easy
 ---
 
 You are given an array of `n` strings `strs`, all of the same length.
