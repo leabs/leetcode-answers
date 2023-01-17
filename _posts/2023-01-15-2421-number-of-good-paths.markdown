@@ -20,6 +20,14 @@ Note that a path and its reverse are counted as the same path. For example, `0 -
 
 This was behind my ability, but I found a great write up with a solution [here](https://leetcode.com/problems/number-of-good-paths/solutions/3052905/javascript-union-find/?languageTags=javascript)
 
+<pre><strong>Input:</strong> vals = [1,3,2,1,3], edges = [[0,1],[0,2],[2,3],[2,4]]
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> There are 5 good paths consisting of a single node.
+There is 1 additional good path: 1 -&gt; 0 -&gt; 2 -&gt; 4.
+(The reverse path 4 -&gt; 2 -&gt; 0 -&gt; 1 is treated as the same as 1 -&gt; 0 -&gt; 2 -&gt; 4.)
+Note that 0 -&gt; 2 -&gt; 3 is not a good path because vals[2] &gt; vals[0].
+</pre>
+
 ```javascript
 /**
  * @param {number[]} vals

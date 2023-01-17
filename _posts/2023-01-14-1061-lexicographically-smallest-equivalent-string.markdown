@@ -22,6 +22,13 @@ For example, given the equivalency information from `s1 = "abc"` and `s2 = "cde"
 
 Return the lexicographically smallest equivalent string of `baseStr` by using the equivalency information from `s1` and `s2`.
 
+<pre><strong>Input:</strong> s1 = "parker", s2 = "morris", baseStr = "parser"
+<strong>Output:</strong> "makkek"
+<strong>Explanation:</strong> Based on the equivalency information in s1 and s2, we can group their characters as [m,p], [a,o], [k,r,s], [e,i].
+The characters in each group are equivalent and sorted in lexicographical order.
+So the answer is "makkek".
+</pre>
+
 ```javascript
 /**
  * @param {string} s1

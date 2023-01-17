@@ -12,6 +12,10 @@ Insert `newInterval` into `intervals` such that `intervals` is still sorted in a
 
 Return `intervals` after the insertion.
 
+<pre><strong>Input:</strong> intervals = [[1,3],[6,9]], newInterval = [2,5]
+<strong>Output:</strong> [[1,5],[6,9]]
+</pre>
+
 ```javascript
 /**
  * @param {number[][]} intervals

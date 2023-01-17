@@ -12,6 +12,13 @@ Arrows can be shot up directly vertically (in the positive y-direction) from dif
 
 Given the array `points`, return the minimum number of arrows that must be shot to burst all balloons.
 
+<pre><strong>Input:</strong> points = [[10,16],[2,8],[1,6],[7,12]]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> The balloons can be burst by 2 arrows:
+- Shoot an arrow at x = 6, bursting the balloons [2,8] and [1,6].
+- Shoot an arrow at x = 11, bursting the balloons [10,16] and [7,12].
+</pre>
+
 ```javascript
 /**
  * @param {number[][]} points

@@ -14,6 +14,12 @@ Return an array of size n where ans[i] is the number of nodes in the subtree of 
 
 A subtree of a tree T is the tree consisting of a node in T and all of its descendant nodes.
 
+<pre><strong>Input:</strong> n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], labels = "abaedcd"
+<strong>Output:</strong> [2,1,1,1,1,1,1]
+<strong>Explanation:</strong> Node 0 has label 'a' and its sub-tree has node 2 with label 'a' as well, thus the answer is 2. Notice that any node is part of its sub-tree.
+Node 1 has a label 'b'. The sub-tree of node 1 contains nodes 1,4 and 5, as nodes 4 and 5 have different labels than node 1, the answer is just 1 (the node itself).
+</pre>
+
 ```javascript
 /**
  * @param {number} n

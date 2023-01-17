@@ -7,6 +7,10 @@ difficulty: hard
 
 Given an array of `points` where `points[i] = [xi, yi]` represents a point on the X-Y plane, return _the maximum number of points that lie on the same straight line_.
 
+<pre><strong>Input:</strong> points = [[1,1],[2,2],[3,3]]
+<strong>Output:</strong> 3
+</pre>
+
 ```javascript
 /**
  * @param {number[][]} points

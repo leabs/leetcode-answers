@@ -12,6 +12,12 @@ You are also given a string s of length n, where s[i] is the character assigned 
 
 Return the length of the longest path in the tree such that no pair of adjacent nodes on the path have the same character assigned to them.
 
+<pre><strong>Input:</strong> parent = [-1,0,0,1,1,2], s = "abacbe"
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> The longest path where each two adjacent nodes have different characters in the tree is the path: 0 -&gt; 1 -&gt; 3. The length of this path is 3, so 3 is returned.
+It can be proven that there is no longer path that satisfies the conditions. 
+</pre>
+
 ```javascript
 /**
  * @param {number[]} parent

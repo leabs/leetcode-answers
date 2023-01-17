@@ -13,6 +13,10 @@ We define the usage of capitals in a word to be right when one of the following 
 
 Given a string `word`, return `true` if the usage of capitals in it is right.
 
+<pre><strong>Input:</strong> word = "USA"
+<strong>Output:</strong> true
+</pre>
+
 ```javascript
 /**
  * @param {string} word

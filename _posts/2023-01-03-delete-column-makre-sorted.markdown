@@ -19,6 +19,15 @@ You want to delete the columns that are not sorted lexicographically. In the abo
 
 Return the number of columns that you will delete.
 
+<pre><strong>Input:</strong> strs = ["cba","daf","ghi"]
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> The grid looks as follows:
+  cba
+  daf
+  ghi
+Columns 0 and 2 are sorted, but column 1 is not, so you only need to delete 1 column.
+</pre>
+
 ```javascript
 /**
  * @param {string[]} strs

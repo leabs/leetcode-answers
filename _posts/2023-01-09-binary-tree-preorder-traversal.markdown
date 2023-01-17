@@ -8,6 +8,10 @@ difficulty: easy
 
 Given the `root` of a binary tree, return the _preorder traversal of its nodes' values_.
 
+<pre><strong>Input:</strong> root = [1,null,2,3]
+<strong>Output:</strong> [1,2,3]
+</pre>
+
 ```javascript
 /**
  * Definition for a binary tree node.
