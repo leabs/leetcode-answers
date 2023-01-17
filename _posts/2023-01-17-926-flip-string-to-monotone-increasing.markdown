@@ -12,6 +12,11 @@ You are given a binary string `s`. You can flip `s[i]` changing it from `0` to `
 
 Return the minimum number of flips to make `s` monotone increasing.
 
+<pre><strong>Input:</strong> s = "00110"
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> We flip the last digit to get 00111.
+</pre>
+
 ```javascript
 /**
  * @param {string} s

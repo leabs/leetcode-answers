@@ -2,6 +2,10 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   {%- include head.html -%}
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
   <style>
     #results-container{
         margin-left:0;
@@ -34,6 +38,10 @@
     input{
       font-size: 16px;
     }
+    h1,h2,h3,h4,h5, a{
+      font-family: 'Nunito', sans-serif !important;
+    }
+   
   </style>
 
   <body>
