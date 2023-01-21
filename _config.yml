@@ -36,3 +36,11 @@ plugins:
 twitter:
   username: shadow_stack
   card: summary
+
+jekyll_compose:
+  default_front_matter:
+    layout: post
+    comments: true
+    posts:
+      difficulty:
+      comments: true
