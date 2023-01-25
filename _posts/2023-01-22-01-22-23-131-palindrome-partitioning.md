@@ -2,7 +2,7 @@
 layout: post
 title: "131. Palindrome Partitioning"
 date: 2023-01-22 10:07 -0500
-difficulty:
+difficulty: medium
 comments: true
 ---
 
