@@ -1,85 +1,93 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  {%- include head.html -%}
-  {% seo %}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+{%- include head.html -%}
+{% seo %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
-  <style>
-    #results-container{
-        margin-left:0;
-    }
-    .hero-body h1.title{
-      margin-bottom: 0;
-    }
-    .hero-body h2.subtitle{
-      padding-top: 26px;
-    }
-    #thread__wrapper{
-      max-width: -webkit-calc(800px - (30px));
+<style>
+  #results-container {
+    margin-left: 0;
+  }
+
+  .hero-body h1.title {
+    margin-bottom: 0;
+  }
+
+  .hero-body h2.subtitle {
+    padding-top: 26px;
+  }
+
+  #thread__wrapper {
+    max-width: -webkit-calc(800px - (30px));
     max-width: calc(800px - (30px));
     padding-right: 15px;
     padding-left: 15px;
-    }
-    .wrapper{
-      max-width: -webkit-calc(1000px - (30px));
-    }
-    p.post-meta,
-    h2.subtitle{
-      margin-bottom: 0 !important;
-    }
-    div.pagination span,
-    div.pagination em,
-    div.pagination a{
-      padding:8px;
-    }
+  }
 
-    input{
-      font-size: 16px;
-    }
-    h1,h2,h3,h4,h5, a{
-      font-family: 'Nunito', sans-serif !important;
-    }
-    code{
-      color:indianred;
-    }
-   
-  </style>
+  .wrapper {
+    max-width: -webkit-calc(1000px - (30px));
+  }
 
-  <body>
+  p.post-meta,
+  h2.subtitle {
+    margin-bottom: 0 !important;
+  }
 
-    {%- include header.html -%}
+  div.pagination span,
+  div.pagination em,
+  div.pagination a {
+    padding: 8px;
+  }
 
-    
+  input {
+    font-size: 16px;
+  }
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-      
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  a {
+    font-family: 'Nunito', sans-serif !important;
+  }
 
-<!-- or without installing anything -->
-<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
-        {{ content }}
-        <br >
-        {%- if page.url contains '/2023/'-%}
-    {%- include disqus_comments.html -%}
-    {%- endif -%}
-      </div>
-      
-    </main>
-  
+  code {
+    color: indianred;
+  }
+</style>
 
-    {%- include footer.html -%}
-    <script id="dsq-count-scr" src="//leet-code-answers.disqus.com/count.js" async></script>
+<body>
 
-  </body>
-  <script>
-    var sjs = SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  json: '/search.json',
-  searchResultTemplate: '<li style="list-style: none; margin: 0; padding:8px 4px; background:#fff; box-shadow: 3px 3px 5px rgba(0,0,0,0.25);"><a style="" href="{{ site.url }}{url}"> <span>{title}</span> <br /> <span style="">{date}</span>  | <span>Day: {day}</span></a></li>'
-})
+  {%- include header.html -%}
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+
+      <!-- or without installing anything -->
+      <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+      {{ content }}
+      <br>
+      {%- if page.url contains '/2023/'-%}
+      {%- include disqus_comments.html -%}
+      {%- endif -%}
+    </div>
+
+  </main>
+
+  {%- include footer.html -%}
+  <script id="dsq-count-scr" src="//leet-code-answers.disqus.com/count.js" async></script>
+
+</body>
+<script>
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li style="list-style: none; margin: 0; padding:8px 4px; background:#fff; box-shadow: 3px 3px 5px rgba(0,0,0,0.25);"><a style="" href="{{ site.url }}{url}"> <span>{title}</span> <br /> <span style="">{date}</span>  | <span>Day: {day}</span></a></li>'
+  })
 </script>
 
 </html>
