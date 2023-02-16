@@ -14,11 +14,13 @@ You are given two arrays `redEdges` and `blueEdges` where:
 
 Return an array `answer` of length `n`, where each `answer[x]` is the length of the shortest path from node `0` to node `x` such that the edge colors alternate along the path, or `-1` if such a path does not exist.
 
-## Example:
-```
+## Example
+
+```javascript
 Input: n = 3, redEdges = [[0,1],[1,2]], blueEdges = []
 Output: [0,1,-1]
 ```
+
 Helpful solution found [here!](https://leetcode.com/problems/shortest-path-with-alternating-colors/solutions/3170113/96-55-fast-javascript-very-very-easy-to-understand-solution-with-video-explanation-en-kr/?orderBy=hot&languageTags=javascript)
 
 ```javascript

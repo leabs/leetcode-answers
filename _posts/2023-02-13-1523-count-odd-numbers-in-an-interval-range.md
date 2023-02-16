@@ -8,9 +8,9 @@ comments: true
 
 Given two non-negative integers `low` and `high`. Return the count of _odd numbers between_ `low` and `high` _(inclusive)_.
 
-## Example:
+## Example
 
-```
+```javascript
 Input: low = 3, high = 7
 Output: 3
 Explanation: The odd numbers between 3 and 7 are [3,5,7].

@@ -16,8 +16,9 @@ A representative can use the car in their city to travel or change the car and r
 
 Return the minimum number of liters of fuel to reach the capital city.
 
-## Example:
+## Example
 
+```javascript
 Input: roads = [[0,1],[0,2],[0,3]], seats = 5
 Output: 3
 Explanation:
@@ -27,6 +28,7 @@ Explanation:
 - Representative3 goes directly to the capital with 1 liter of fuel.
   It costs 3 liters of fuel at minimum.
   It can be proven that 3 is the minimum number of liters of fuel needed.
+```
 
 ```javascript
 /**

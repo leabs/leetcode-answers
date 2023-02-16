@@ -19,7 +19,8 @@ Write the code that will take a string and make this conversion given a number o
 string convert(string s, int numRows);
 </pre>
 
-## Example:
+## Example
+
 <pre><strong>Input:</strong> s = "PAYPALISHIRING", numRows = 3
 <strong>Output:</strong> "PAHNAPLSIIGYIR"
 </pre>

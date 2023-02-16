@@ -9,7 +9,7 @@ For two strings `s` and `t`, we say "`t` divides `s`" if and only if `s = t + ..
 
 Given two strings `str1` and `str2`, return the largest string `x` such that `x` divides both `str1` and `str2`.
 
-## Example: 
+## Example
 <pre><strong>Input:</strong> str1 = "ABCABC", str2 = "ABC"
 <strong>Output:</strong> "ABC"
 </pre>

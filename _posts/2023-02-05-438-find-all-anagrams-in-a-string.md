@@ -11,7 +11,8 @@ An **Anagram** is a word or phrase formed by rearranging the letters of a differ
 
 Great solution with video [here!](https://leetcode.com/problems/find-all-anagrams-in-a-string/solutions/3143305/javascript-very-very-easy-to-understand-map-solution-with-video-explanation-en-kr/?orderBy=hot&languageTags=javascript)
 
-## Example:
+## Example
+
 <pre><strong>Input:</strong> s = "cbaebabacd", p = "abc"
 <strong>Output:</strong> [0,6]
 <strong>Explanation:</strong>

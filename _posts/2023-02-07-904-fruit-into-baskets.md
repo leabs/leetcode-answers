@@ -16,7 +16,7 @@ You want to collect as much fruit as possible. However, the owner has some stric
 
 Given the integer array `fruits`, return the _maximum_ number of fruits you can pick.
 
-## Example:
+## Example
 
 <pre><strong>Input:</strong> fruits = [<u>1,2,1</u>]
 <strong>Output:</strong> 3

@@ -12,7 +12,7 @@ However, the basketball team is not allowed to have **conflicts**. A **conflict*
 
 Given two lists, `scores` and `ages`, where each `scores[i]` and `ages[i]` represents the score and age of the `ith` player, respectively, return the _highest overall score of all possible basketball teams_.
 
-## Example:
+## Example
 
 <pre><strong>Input:</strong> scores = [1,3,5,10,15], ages = [1,2,3,4,5]
 <strong>Output:</strong> 34
