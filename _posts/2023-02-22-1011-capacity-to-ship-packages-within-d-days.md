@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 1011. Capacity To Ship Packages Within D Days
-date: 2023-02-22 20:29 -0500
+date: 2023-02-22 00:29 -0500
 difficulty: medium
 comments: true
 ---
@@ -27,7 +27,7 @@ Explanation: A ship capacity of 15 is the minimum to ship all the packages in 5 
 Note that the cargo must be shipped in the order given, so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed.
 ```
 
-## Solution 
+## Solution
 
 ```javascript
 /**
