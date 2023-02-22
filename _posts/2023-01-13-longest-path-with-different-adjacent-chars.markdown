@@ -18,6 +18,8 @@ Return the length of the longest path in the tree such that no pair of adjacent 
 It can be proven that there is no longer path that satisfies the conditions. 
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} parent

@@ -33,6 +33,8 @@ The following are some examples of invalid selections:
 
 Great explaination to this problem [here](https://leetcode.com/problems/naming-a-company/solutions/3162412/100-fast-javascript-very-very-easy-to-understand-solution-with-video-explanation-en-kr/?orderBy=hot&languageTags=javascript).
 
+## Solution
+
 ```javascript
 /**
  * @param {string[]} ideas

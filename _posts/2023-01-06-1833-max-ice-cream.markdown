@@ -18,6 +18,8 @@ Note: The boy can buy the ice cream bars in any order.
 <strong>Explanation: </strong>The boy can buy ice cream bars at indices 0,1,2,4 for a total price of 1 + 3 + 2 + 1 = 7.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} costs

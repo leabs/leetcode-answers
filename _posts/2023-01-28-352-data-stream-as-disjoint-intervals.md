@@ -37,6 +37,8 @@ summaryRanges.addNum(6);      // arr = [1, 2, 3, 6, 7]
 summaryRanges.getIntervals(); // return [[1, 3], [6, 7]]
 </pre>
 
+## Solution
+
 ```javascript
 var SummaryRanges = function() {
     this.arr = []

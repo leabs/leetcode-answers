@@ -22,6 +22,8 @@ Given the array `points`, return the minimum number of arrows that must be shot 
 It can be shown that all the tasks cannot be completed in fewer than 4 rounds, so the answer is 4.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[][]} points

@@ -13,6 +13,8 @@ Here **follow** means a full match, such that there is a bijection between a let
 <strong>Output:</strong> true
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {string} pattern

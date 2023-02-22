@@ -23,6 +23,8 @@ Given the integer array `fruits`, return the _maximum_ number of fruits you can 
 <strong>Explanation:</strong> We can pick from all 3 trees.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} fruits

@@ -20,6 +20,8 @@ A subtree of a tree T is the tree consisting of a node in T and all of its desce
 Node 1 has a label 'b'. The sub-tree of node 1 contains nodes 1,4 and 5, as nodes 4 and 5 have different labels than node 1, the answer is just 1 (the node itself).
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number} n

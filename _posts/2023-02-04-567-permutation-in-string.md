@@ -16,6 +16,8 @@ In other words, return `true` `if` one of `s1`'s permutations is the substring o
 <strong>Explanation:</strong> s2 contains one permutation of s1 ("ba").
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {string} s1

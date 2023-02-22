@@ -16,6 +16,8 @@ Given a sequence of `words` written in the alien language, and the `order` of th
 <strong>Explanation: </strong>As 'h' comes before 'l' in this language, then the sequence is sorted.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {string[]} words

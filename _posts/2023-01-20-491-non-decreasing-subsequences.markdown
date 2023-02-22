@@ -12,6 +12,8 @@ Given an integer array `nums`, return _all the different possible non-decreasing
 <strong>Output:</strong> [[4,6],[4,6,7],[4,6,7,7],[4,7],[4,7,7],[6,7],[6,7,7],[7,7]]
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} nums

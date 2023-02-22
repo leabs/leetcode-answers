@@ -23,6 +23,8 @@ Travel to station 3. The cost is 5. Your gas is just enough to travel back to st
 Therefore, return 3 as the starting index.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} gas

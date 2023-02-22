@@ -25,6 +25,8 @@ string convert(string s, int numRows);
 <strong>Output:</strong> "PAHNAPLSIIGYIR"
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {string} s

@@ -16,6 +16,8 @@ A **subarray** is a **contiguous** part of an array.
 [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} nums

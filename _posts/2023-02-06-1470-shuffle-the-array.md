@@ -15,6 +15,8 @@ _Return the array in the form_ `[x1,y1,x2,y2,...,xn,yn]`.
 <strong>Explanation:</strong> Since x<sub>1</sub>=2, x<sub>2</sub>=5, x<sub>3</sub>=1, y<sub>1</sub>=3, y<sub>2</sub>=4, y<sub>3</sub>=7 then the answer is [2,3,5,4,1,7].
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} nums

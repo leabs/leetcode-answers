@@ -15,6 +15,8 @@ Output: [[3], [20, 9], [15, 7]];
 
 Great solution [here.](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/solutions/3122259/simple-soln-in-js/?orderBy=hot&languageTags=javascript)
 
+## Solution
+
 ```javascript
 /**
  * Definition for a binary tree node.

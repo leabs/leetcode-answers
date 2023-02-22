@@ -16,6 +16,8 @@ Output: 3
 Explanation: The odd numbers between 3 and 7 are [3,5,7].
 ```
 
+## Solution
+
 ```javascript
 /**
  * @param {number} l

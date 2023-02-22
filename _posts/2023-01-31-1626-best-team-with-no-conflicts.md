@@ -19,6 +19,8 @@ Given two lists, `scores` and `ages`, where each `scores[i]` and `ages[i]` repre
 <strong>Explanation:</strong>&nbsp;You can choose all the players.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} scores

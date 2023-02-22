@@ -17,6 +17,8 @@ A subarray may only include each element of the fixed buffer `nums` at most once
 <strong>Explanation:</strong> Subarray [3] has maximum sum 3.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} nums

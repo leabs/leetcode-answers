@@ -19,6 +19,8 @@ Given the array `points`, return the minimum number of arrows that must be shot 
 - Shoot an arrow at x = 11, bursting the balloons [10,16] and [7,12].
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[][]} points

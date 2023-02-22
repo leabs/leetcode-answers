@@ -14,6 +14,8 @@ Two binary trees are considered the same if they are structurally identical, and
 <strong>Output:</strong> true
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * Definition for a binary tree node.

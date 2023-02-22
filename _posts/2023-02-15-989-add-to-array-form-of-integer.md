@@ -20,6 +20,7 @@ Output: [1,2,3,4]
 Explanation: 1200 + 34 = 1234
 ```
 
+## Solution
 
 ```javascript
 /**

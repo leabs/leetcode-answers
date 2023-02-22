@@ -11,6 +11,8 @@ Given an array of `points` where `points[i] = [xi, yi]` represents a point on th
 <strong>Output:</strong> 3
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[][]} points

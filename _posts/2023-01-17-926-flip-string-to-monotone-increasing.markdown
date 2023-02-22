@@ -17,6 +17,8 @@ Return the minimum number of flips to make `s` monotone increasing.
 <strong>Explanation:</strong> We flip the last digit to get 00111.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {string} s

@@ -12,6 +12,8 @@ Given a string `s`, partition `s` such that every substring of the partition is 
 <strong>Output:</strong> [["a","a","b"],["aa","b"]]
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {string} s

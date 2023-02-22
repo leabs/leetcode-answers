@@ -16,6 +16,8 @@ Return `intervals` after the insertion.
 <strong>Output:</strong> [[1,5],[6,9]]
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[][]} intervals

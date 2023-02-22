@@ -30,6 +30,8 @@ Explanation:
   It can be proven that 3 is the minimum number of liters of fuel needed.
 ```
 
+## Solution
+
 ```javascript
 /**
  * @param {number[][]} roads

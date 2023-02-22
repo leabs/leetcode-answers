@@ -28,6 +28,8 @@ There is 1 additional good path: 1 -&gt; 0 -&gt; 2 -&gt; 4.
 Note that 0 -&gt; 2 -&gt; 3 is not a good path because vals[2] &gt; vals[0].
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} vals

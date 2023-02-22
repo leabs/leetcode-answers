@@ -22,6 +22,8 @@ Note that `edges` may contain cycles.
 The maximum of those two distances is 1. It can be proven that we cannot get a node with a smaller maximum distance than 1, so we return node 2.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number[]} edges

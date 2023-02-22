@@ -24,6 +24,8 @@ Return the _label of the town judge if the town judge exists and can be identifi
 <strong>Output:</strong> 2
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number} n

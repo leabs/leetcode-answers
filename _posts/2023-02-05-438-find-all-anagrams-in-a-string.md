@@ -20,6 +20,8 @@ The substring with start index = 0 is "cba", which is an anagram of "abc".
 The substring with start index = 6 is "bac", which is an anagram of "abc".
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {string} s

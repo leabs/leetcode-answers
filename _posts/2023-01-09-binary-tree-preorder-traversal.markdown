@@ -12,6 +12,8 @@ Given the `root` of a binary tree, return the _preorder traversal of its nodes' 
 <strong>Output:</strong> [1,2,3]
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * Definition for a binary tree node.

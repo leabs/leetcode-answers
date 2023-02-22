@@ -15,6 +15,7 @@ A **concatenated word** is defined as a string that is comprised entirely of at 
 "dogcatsdog" can be concatenated by "dog", "cats" and "dog"; 
 "ratcatdogcat" can be concatenated by "rat", "cat", "dog" and "cat".</pre>
 
+## Solution
 
 ```javascript
 /**

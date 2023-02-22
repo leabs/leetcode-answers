@@ -16,6 +16,8 @@ Given two strings `str1` and `str2`, return the largest string `x` such that `x`
 
 Great solution [here.](https://leetcode.com/problems/greatest-common-divisor-of-strings/solutions/2641769/js-very-easy-solution-faster-than-99/?orderBy=hot&languageTags=javascript)
 
+## Solution
+
 ```javascript
 // Set up a function that checks if a string is divisible by another string
 const isDivides = (long, short) => {

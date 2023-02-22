@@ -15,6 +15,8 @@ The edges of the undirected tree are given in the array edges, where edges[i] = 
 <strong>Explanation:</strong> The figure above represents the given tree where red vertices have an apple. One optimal path to collect all apples is shown by the green arrows.  
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {number} _n

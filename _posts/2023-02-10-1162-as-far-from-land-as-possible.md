@@ -20,6 +20,8 @@ The distance used in this problem is the Manhattan distance: the distance betwee
 
 Good solution [here.](https://leetcode.com/problems/as-far-from-land-as-possible/solutions/3167044/javascript-super-easy-to-understand/?orderBy=hot&languageTags=javascript)
 
+## Solution
+
 ```javascript
 /**
  * @param {number[][]} grid

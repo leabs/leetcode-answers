@@ -28,6 +28,8 @@ Return the number of columns that you will delete.
 Columns 0 and 2 are sorted, but column 1 is not, so you only need to delete 1 column.
 </pre>
 
+## Solution
+
 ```javascript
 /**
  * @param {string[]} strs

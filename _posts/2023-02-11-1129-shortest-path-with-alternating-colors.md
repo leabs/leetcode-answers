@@ -23,6 +23,8 @@ Output: [0,1,-1]
 
 Helpful solution found [here!](https://leetcode.com/problems/shortest-path-with-alternating-colors/solutions/3170113/96-55-fast-javascript-very-very-easy-to-understand-solution-with-video-explanation-en-kr/?orderBy=hot&languageTags=javascript)
 
+## Solution
+
 ```javascript
 /**
  * @param {number} n
