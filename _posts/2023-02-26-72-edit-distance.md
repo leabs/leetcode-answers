@@ -27,6 +27,8 @@ rose -> ros (remove 'e')
 
 Great solution found [here](https://leetcode.com/problems/edit-distance/solutions/428527/javascript-solution/?orderBy=hot&languageTags=javascript)
 
+## Solution
+
 ```javascript
 /**
  * @param {string} word1
