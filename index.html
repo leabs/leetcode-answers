@@ -31,18 +31,21 @@ image: "/assets/images/leetcode.png"
     margin-bottom: 12px;
   "
 ></ul>
+
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-<div
-  style="
-    padding: 30px 20px;
-    box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.05);
-    background: rgba(0, 0, 0, 0.005);
-    border: 1px solid rgba(0, 0, 0, 0.05);"
->
-  <h1 style="font-size: 1.5rem; margin-bottom: 1rem">
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </h1>
+{% for post in paginator.posts %} {% assign mod = forloop.index0 | modulo:2 %}
+{% if mod == 0 %}
+<div class="columns">
+  {% endif %}
+  <div
+    class="column"
+    style="
+      padding: 30px 20px;
+      box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.05);
+      background: rgba(0, 0, 0, 0.005);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    "
+  >
   <div class="tags has-addons">
     <span class="tag is-light">Day {{ post.date | date: "%j" }}</span>
     {% if post.difficulty == 'hard' %}
@@ -55,29 +58,40 @@ image: "/assets/images/leetcode.png"
     <span class="tag is-primary">{{ post.difficulty }}</span>
     {% endif %}
   </div>
+    <h1 style="font-size: 1.5rem; margin-bottom: 1rem">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h1>
 
-  <div class="content">{{ post.content | strip_html | truncatewords: 20 }}</div>
-</div>
-<br />
-{% endfor %} {% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-  {% else %}
-  <span>&laquo; Prev</span>
-  {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
-  paginator.page %}
-  <em>{{ page }}</em>
-  {% elsif page == 1 %}
-  <a href="{{ '/' | relative_url }}">{{ page }}</a>
-  {% else %}
-  <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}"
-    >{{ page }}</a
-  >
-  {% endif %} {% endfor %} {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-  {% else %}
-  <span>Next &raquo;</span>
-  {% endif %}
+    <div class="content">
+      {{ post.content | strip_html | truncatewords: 20 }}
+    </div>
+  </div>
+{% if mod == 1 %}
 </div>
 {% endif %}
+
+  
+  {% endfor %} 
+</div>{% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    {% else %}
+    <span>&laquo; Prev</span>
+    {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
+    paginator.page %}
+    <em>{{ page }}</em>
+    {% elsif page == 1 %}
+    <a href="{{ '/' | relative_url }}">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}"
+      >{{ page }}</a
+    >
+    {% endif %} {% endfor %} {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    {% else %}
+    <span>Next &raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
