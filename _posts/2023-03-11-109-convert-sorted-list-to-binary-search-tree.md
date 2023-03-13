@@ -11,7 +11,7 @@ height-balanced binary search tree.
 
 ## Example
 
-<img src="{{ site.baseurl }}/assets/images/mar-11.png" alt="Example tree image" />
+<img src="{{ site.baseurl }}/assets/images/mar-11.jpg" alt="Example tree image" />
 
 ```javascript
 Input: head = [-10,-3,0,5,9]
