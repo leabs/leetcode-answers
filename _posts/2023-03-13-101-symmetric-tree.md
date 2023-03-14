@@ -10,7 +10,7 @@ Given the `root` of a binary tree, check whether it is a mirror of itself (i.e.,
 
 ## Example
 
-<img src="{{ site.baseurl }}/assets/images/mar-13.png" alt="Example tree image" />
+<img src="{{ site.baseurl }}/assets/images/mar-13.jpg" alt="Example tree image" />
 
 ```javascript
 Input: root = [1, 2, 2, 3, 4, 4, 3];
