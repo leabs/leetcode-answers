@@ -16,7 +16,7 @@ It is **guaranteed** that the answer will in the range of a **32-bit** signed in
 
 ## Example
 
-<img src="{{ site.baseurl }}/assets/images/apr-20.jpg" alt="Example tree image" />
+<img src="{{ site.baseurl }}/assets/images/apr-20.jpeg" alt="Example tree image" />
 
 ```javascript
 Input: root = [1,3,2,5,3,null,9]
