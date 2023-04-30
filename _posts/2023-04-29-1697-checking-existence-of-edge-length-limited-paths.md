@@ -14,7 +14,7 @@ Return a boolean array `answer`, where `answer.length == queries.length` and the
 
 ## Example
 
-<img src="{{ site.baseurl }}/assets/images/apr-29.jpg" alt="Bulb image" />
+<img src="{{ site.baseurl }}/assets/images/apr-29.png" alt="Bulb image" />
 
 ```javascript
 Input: n = 3, edgeList = [[0,1,2],[1,2,4],[2,0,8],[1,0,16]], queries = [[0,1,2],[0,2,5]]
