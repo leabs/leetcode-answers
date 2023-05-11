@@ -19,7 +19,7 @@ Return the _maximum number of connecting lines we can draw in this way_.
 
 ## Example
 
-<img src="{{ site.baseurl }}/assets/images/may-11.png" alt="Example grid image" />
+<img src="{{ site.baseurl }}/assets/images/may-11.png" alt="Example grid image"  style="max-width:300px" />
 
 ```javascript
 Input: nums1 = [1,4,2], nums2 = [1,2,4]
