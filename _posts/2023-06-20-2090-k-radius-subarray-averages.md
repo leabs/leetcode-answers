@@ -32,7 +32,7 @@ Explanation:
 
 ## Solution
 
-Great solution found [here](https://leetcode.com/problems/k-radius-subarray-averages/solutions/3661447/easy-js-solution/)
+Great solution found [here](https://leetcode.com/problems/k-radius-subarray-averages/solutions/1599974/javascript-sliding-window/)
 
 ```javascript
 /**
@@ -41,22 +41,25 @@ Great solution found [here](https://leetcode.com/problems/k-radius-subarray-aver
  * @return {number[]}
  */
 var getAverages = function (nums, k) {
-  var getAverages = function (nums, k) {
-    // Set ans to an array of length nums.length filled with -1
-    const ans = new Array(nums.length).fill(-1);
-    // If nums.length is less than 2 * k + 1
-    if (nums.length < 2 * k + 1) return ans;
-    // Set sum to 0
-    let sum = 0;
-    // Iterate from 0 to 2 * k
-    for (let i = 0; i <= 2 * k; i++) sum += nums[i];
-    // Set ans[k] to Math.floor(sum / (2 * k + 1))
-    for (let i = k; i + k < nums.length; i++) {
-      ans[i] = Math.floor(sum / (2 * k + 1));
-      sum -= nums[i - k];
-      sum += nums[i + k + 1];
+  //set up variables
+  const twoK = 2 * k;
+  const windowSize = twoK + 1;
+  //create result array
+  const result = [...nums].fill(-1);
+  //create sum variable
+  let sum = 0;
+  //iterate through nums
+  for (let i = 0; i < nums.length; i++) {
+    //add nums[i] to sum
+    sum += nums[i];
+    //if i is greater than or equal to windowSize
+    if (i >= twoK) {
+      //set result[i - k] to sum / windowSize
+      result[i - k] = Math.floor(sum / windowSize);
+      //subtract nums[i - twoK] from sum
+      sum -= nums[i - twoK];
     }
-    return ans;
-  };
+  }
+  return result;
 };
 ```
